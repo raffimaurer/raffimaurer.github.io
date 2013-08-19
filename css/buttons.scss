@@ -1,0 +1,60 @@
+.headerButton {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100%;
+    border-bottom: 0px solid #47a1d9;
+	width: 92px;
+	text-align: center;
+
+    /* Font styles */
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+	
+	/* Animations */
+	transition: .2s ease;
+	-webkit-transition: .2s ease;
+	
+	&:hover {
+		border-bottom: 4px solid #2a92d3;
+		color: #8d8d8d;
+	}
+}
+
+
+
+.contactButton {
+	display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    height: 26px;
+    border-radius: 5px;
+    border: 0px solid #F1F1F1;
+    margin: 6px;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: none;
+	width: 70px;
+}
+a.contactButton { color: #909090; }
+
+
+#email			{ border: 2px solid #84ce67; color: #84ce67; }
+#email:hover  	{ border: 2px solid #a7da92; }
+#email:active 	{ border: 2px solid #5bb935; }
+
+#twitter		{ border: 2px solid #00acee; color: #00acee; }
+#twitter:hover  { border: 2px solid #00C4FF; }
+#twitter:active { border: 2px solid #00a0d1; }
+
+#google			{ border: 2px solid #d96254; color: #d96254; }
+#google:hover	{ border: 2px solid #e3958b; }
+#google:active	{ border: 2px solid #be2c1c; }
+
+#linkedin		{ border: 2px solid #0e76a8; color: #0e76a8; }
+#linkedin:hover	{ border: 2px solid #5ea5c6; }
+#linked:active	{ border: 2px solid #036fa0; }

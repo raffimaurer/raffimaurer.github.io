@@ -1,0 +1,33 @@
+h1 {  /* Post Title */ 
+    font-size: 20px;
+    text-align: left;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+h1 span { font-weight: 300; }
+
+h2 { /* Me page cards */
+    font-size: 27px;
+    text-align: center;
+    font-weight: 300;
+    color: black;
+}
+
+h4 {  /* Post Detail Line */
+    font-weight: 300;
+    font-size: 15px;
+	text-align: left;
+	line-height: 10px;
+}
+
+h10 { /* Header Title */
+    font-size: 25px;
+    margin-left: 25px;
+    float: center;
+    display: inline-block;
+}
+
+a:hover { color: #2a92d3; text-decoration: none; }
+a:active{ color: #2a92d3; text-decoration: none;}
+a:link 	{ color: black; text-decoration: none; }

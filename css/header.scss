@@ -1,0 +1,44 @@
+#header {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    overflow: visible;
+    font-weight: 300;
+    padding-top: 5px;
+    text-align: centre;
+    margin-top: -11px;
+    opacity: 0.850;
+}
+
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    max-width: 700px;
+	width: 92%;
+}
+
+.headercontainer {
+    width: 100%;
+    border: 0px solid black;
+    overflow: hidden; /* contains if #left is longer than #right */;
+}
+
+.headerLeft {
+    width: 30%;
+    height: 100%;
+    float: left; /* add this */
+    border: 0px solid red;
+    display: inline-block;
+}
+
+.headerRight {
+    border: 0px solid green;
+    height: 35%;
+    width: 70%;
+    overflow: hidden; /* so #right doesn't wrap below #left */
+}
