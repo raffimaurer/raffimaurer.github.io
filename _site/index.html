@@ -1,19 +1,53 @@
-<div id="content" style="background: white !important;">
-	<div class="wrap">
-		<div class="entry">
-			<?php the_post_thumbnail();?>
-			<?php the_content();?>
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			<h100>.</h100>
-			<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><h1><?php the_title(); ?><span> &mdash; <?php the_time('F j') ?></span></a></h1>
-			<?php the_content('[...]'); ?>
-			<!--<?php comments_template(); ?>-->
-			<?php endwhile; else: ?>
-			<p></p>
-			<p><?php _e('No posts matched your criteria.'); ?></p><?php endif; ?>
-		</div>
-	</div> 
-	
-<div class="navigation">
-	<p><?php posts_nav_link('&#8734;','Newer','Older'); ?></p>
-</div>  
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>My New Jekyll Site</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Your New Jekyll Site</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    
+      <li><span>18 Aug 2013</span> &raquo; <a href="/jekyll/update/2013/08/18/welcome-to-jekyll.html">Welcome to Jekyll!</a></li>
+    
+  </ul>
+</div>
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>
