@@ -1,7 +1,11 @@
 ---
+<<<<<<< HEAD:_posts/2013-08-19-your-filename.md
 layout: post
 title: Welcome to RaffiMaurer.com
 published: true
+=======
+published: false
+>>>>>>> 892111386e1c36cd8ad5b598c89dc9ab9d58ff2a:_posts/2013-08-19-welcometoraffimaurer.com.md
 ---
 
 Hi, my name is Raffi Maurer. Some of you may remember me as a young blogger who ran a tech site called Raffi’s iDeas a couple years back. I ended the site in 2011, but indicated that there would come a day when I would be ready to return to the tech blogging space. That day has now come.
