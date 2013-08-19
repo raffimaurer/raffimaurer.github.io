@@ -23,7 +23,7 @@ body {
 
 #header {
     width: 100%;
-    height: 60px;
+    height: auto;
     display: inline-block;
     background-color: #FFF;
     position: fixed;
@@ -79,7 +79,8 @@ li { padding-bottom: 30px; }
 .wrap {
     position: relative;
     margin: 0 auto;
-    width: 700px;
+    max-width: 700px;
+	width: 92%;
 }
 
 
@@ -100,7 +101,7 @@ li { padding-bottom: 30px; }
     border-right: 1px solid rgb(216, 216, 216);
     border-top: 5px solid #7a7a7a;
     display: block;
-    margin-top: 30px;
+    margin-top: 80px;
     margin-bottom: 30px;
     padding: 15px;
     font-size: 26px;
@@ -326,22 +327,23 @@ a.contactButton { color: white; }
         
     #content {
         margin: 0px;
-    }      
+    }  
+	
     .entry{
         margin-left: 22px;  
         margin-right: 22px;
         margin: 0px;
         font-size: 28px;
     }
+	
     h1{
         font-size: 55px;
     }
+	
     h10{
         padding-bottom: 15px;
     }
-    #header {
-        height: 127px;
-    }
+
     .wrap{
         width: 93%;   
     }  
@@ -378,9 +380,6 @@ a.contactButton { color: white; }
 	}
 
 	.entry {
- 	   margin-left: 22px;
- 	   margin-right: 22px;
- 	   margin: 0px;
  	   font-size: 23px;
  	}
 
@@ -388,37 +387,10 @@ a.contactButton { color: white; }
   	  font-size: 40px;
   	}
 
-  	#header {
-	    height: 70px;
-	}
-
 	.wrap {
-	    width: 93%;
-	}
-}	
-
-                                    /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-                
-    #content {
-        margin: 0px;
+        width: 92%;
     }
-
-    .entry {
-        margin-left: 22px;
-        margin-right: 22px;
-        margin: 0px;
-    }
-
-    h10 {
-
-    }
-
-    .wrap {
-        width: 93%;
-    };
 }
-
 
 @media only screen and (max-width: 500px) {
 
@@ -441,10 +413,6 @@ a.contactButton { color: white; }
         padding-bottom: 0px;
         height: 20px;
 		width: 25%;
-    }
-
-    #header {
-        height: 85px;
     }
 
 	h1 {
@@ -488,10 +456,6 @@ a.contactButton { color: white; }
         margin-left: auto;
         margin-right: auto;
     }
-	
-	#header {
-		position: relative;
-	}
 
     .aboutpage {
         font-size: 15px;
