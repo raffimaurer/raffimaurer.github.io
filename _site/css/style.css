@@ -38,9 +38,7 @@ body {
     opacity: 0.850;
 }
 
-.entry {
-	margin-top: 90px;
-}
+.entry { margin-top: 90px; }
 .entry a { color: black; }
 .entry a:hover { text-decoration: underline; color: black;}
 
