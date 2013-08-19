@@ -3,9 +3,11 @@ layout: default
 ---
 
 {% include header.html %} 
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
-</div>
+<div id="content" style="background: white !important;">
+	<div class="wrap">
+		<div class="entry" style="margin-top:50px;">
+		<h1 style="text-align: center !important; font-size:25px !important;">{{ page.title }}<br><span>{{ page.date | date: '%d %B %Y' }}</span></h1>	
+		{{ content }}
+	</div>
+	
+{% include footer.html %} 

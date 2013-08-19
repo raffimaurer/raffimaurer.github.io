@@ -40,9 +40,10 @@ body {
 
 .entry {
 	font-family: 'Lato', sans-serif;
+	margin-top:50px;
 }
 .entry a { color: black; }
-.entry a:hover { color: #2a92d3; }
+.entry a:hover { text-decoration: underline; color: black;}
 
 #content {
     width: 100%;
@@ -64,6 +65,10 @@ ul.posts {
 	margin-bottom: 60px;
 }
 
+ul.posts a { color: black; }
+ul.posts a:hover { text-decoration: underline; color: black;}
+li { padding-bottom: 30px; }
+
 
 #footer {
     margin-top: 100px;
@@ -79,9 +84,7 @@ ul.posts {
 }
 
 .title {
-    font-size: 1pt;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: bold;
+    display: none;
 }
 
 .wrap {

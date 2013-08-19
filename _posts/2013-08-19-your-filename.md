@@ -1,8 +1,8 @@
 ---
+layout: post
+title: Welcome to RaffiMaurer.com
 published: true
 ---
-
-## Welcome to RaffiMaurer.com
 
 Hi, my name is Raffi Maurer. Some of you may remember me as a young blogger who ran a tech site called Raffi’s iDeas a couple years back. I ended the site in 2011, but indicated that there would come a day when I would be ready to return to the tech blogging space. That day has now come.
 
