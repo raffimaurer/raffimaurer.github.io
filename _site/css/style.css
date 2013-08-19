@@ -9,6 +9,7 @@ body {
     margin-top: 50px;
     margin-left: 0px;
     width: 100%;
+	font-family: 'Lato', sans-serif;
 }
 
 #wrapper {
@@ -30,7 +31,6 @@ body {
     left: 0;
     z-index: 2000;
     overflow: visible;
-    font-family: 'Lato', sans-serif;
     font-weight: 300;
     padding-top: 5px;
     text-align: centre;
@@ -39,30 +39,22 @@ body {
 }
 
 .entry {
-	font-family: 'Lato', sans-serif;
-	margin-top:50px;
+	margin-top: 90px;
 }
 .entry a { color: black; }
 .entry a:hover { text-decoration: underline; color: black;}
 
 #content {
-    width: 100%;
-    border: 0px solid rgb(214, 215, 216);
-    float: left;
     text-align: justify;
-    font-family: 'Lato', sans-serif;
     background-color: #F6F6F6;
     margin: 0px auto;
-    font-weight: 400;
     font-size: 20px;
-    height: auto 100%;
 }
 
 ul.posts {
 	list-style-type: none;
 	padding: 0px;
-	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-top: 90px;
 }
 
 ul.posts a { color: black; }
@@ -73,7 +65,6 @@ li { padding-bottom: 30px; }
 #footer {
     margin-top: 100px;
     margin-bottom: 18px;
-    font-family: 'Lato', sans-serif;
     width: 40%;
     margin-left: auto;
     margin-right: auto;
