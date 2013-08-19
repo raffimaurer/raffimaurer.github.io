@@ -52,7 +52,7 @@ body {
 ul.posts {
 	list-style-type: none;
 	padding: 0px;
-	margin-top: 90px;
+	margin-top: 110px;
 }
 
 ul.posts a { color: black; }
@@ -337,7 +337,6 @@ a.contactButton { color: white; }
         font-size: 55px;
     }
     h10{
-        font-size: 80px;
         padding-bottom: 15px;
     }
     #header {
@@ -412,7 +411,7 @@ a.contactButton { color: white; }
     }
 
     h10 {
-        font-size: 27px;
+
     }
 
     .wrap {
@@ -421,26 +420,27 @@ a.contactButton { color: white; }
 }
 
 
-                                            /* Landscape phones and down */
-@media only screen and (max-width: 481px), only screen and (max-device-width: 481px) {
+@media only screen and (max-width: 500px) {
 
     #left {
         width: 100%;
         float: none;
-        margin-bottom: 13px;
+		border-bottom: 1px solid #bfbfbf;
+		line-height: px;
 	}
 
     #right {
         width: 100% auto;
-        margin-top: -46px;
         line-height: 10px;
     }
 
     .headerButton {
-        padding-top: 10px;
-        font-size: 15px;
+        margin-top: 4px;
+		padding-top: 10px;
+        font-size: 16px;
         padding-bottom: 0px;
         height: 20px;
+		width: 25%;
     }
 
     #header {
@@ -453,7 +453,6 @@ a.contactButton { color: white; }
 
     h10 {
         font-size: 26px;
-        margin-bottom: 15px;
     }
 
     hMe {
@@ -492,7 +491,6 @@ a.contactButton { color: white; }
 	
 	#header {
 		position: relative;
-		margin-top: -60px;
 	}
 
     .aboutpage {
@@ -510,7 +508,7 @@ a.contactButton { color: white; }
 @media screen and (max-width: 622px) {
 
 	h10 {
-		font-size: 24px;
+
 		margin: 0px;
 	}
 	
