@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD:_posts/2013-08-19-your-filename.md
 layout: post
 title: Welcome to RaffiMaurer.com
 published: true
