@@ -23,9 +23,18 @@ body {
     font-weight: 300;
 }
 
-.entry { margin-top: 90px; }
-.entry a { color: black; }
-.entry a:hover { text-decoration: underline; color: black;}
+.entry {
+	margin-top: 90px;
+	
+	a {
+		color: black;
+		
+		&:hover {
+			text-decoration: underline;
+			color: black;
+		}
+	}
+}
 
 .content {
     text-align: justify;
@@ -41,9 +50,20 @@ ul.posts {
 	margin-top: 110px;
 }
 
-ul.posts a { color: black;  border-bottom: 1px solid #b5b5b5;}
-ul.posts a:hover { text-decoration: none; border-bottom: 1px solid #b5b5b5; color: black;}
-li { padding-bottom: 30px; }
+ul.posts {
+	a {
+		color: black;
+		border-bottom: 1px solid #b5b5b5;
+		
+		&:hover {
+			text-decoration: none;
+			border-bottom: 1px solid #b5b5b5;
+			color: black;
+		}
+	}
+	
+	li { padding-bottom: 30px; }
+}
 
 
 .footer {
@@ -58,6 +78,4 @@ li { padding-bottom: 30px; }
     border-top: 1px dashed #bbbbbb;
 }
 
-.title {
-    display: none;
-}
+.title { display: none; }

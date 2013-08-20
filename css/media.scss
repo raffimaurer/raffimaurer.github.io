@@ -21,6 +21,7 @@ $break-medium: 622px;
 		display: block;
         line-height: 10px;
 		float: none;
+		height: 38px;
     }
 
     .headerButton {
@@ -33,6 +34,10 @@ $break-medium: 622px;
 	}
 	
 	.headerButton:hover { border: none; }
+	
+	h3 {
+		font-size: 22px;	
+	}
 
     h10 {
         font-size: 26px;
@@ -56,7 +61,6 @@ $break-medium: 622px;
     .contactButton {
 	    display: inline-block;
 	    width: 40%;
-	    margin: 0 auto;
 	    margin: 3px;
     }
 }
