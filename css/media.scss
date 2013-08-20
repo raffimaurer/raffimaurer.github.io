@@ -1,13 +1,16 @@
-@media screen and (max-width: 500px) {
+$break-small: 500px;
+$break-medium: 622px;
+
+@media screen and (max-width: $break-small) {
 
 	#header {
-		position: absolute !important;
+		position: absolute;
 		margin-bottom: 40px;
 	}
     
 	.headerLeft {
-        width: 100% !important;
-		display: block !important;
+        width: 100%;
+		display: block;
 		border-bottom: 2px solid #bfbfbf;
 		line-height: px;
 		float: none;
@@ -27,22 +30,12 @@
         padding-bottom: 0px;
         height: 20px;
 		width: 25%;
-		
-    }
+	}
 	
 	.headerButton:hover { border: none; }
 
     h10 {
         font-size: 26px;
-    }
-	
-    .about {
-        margin-top: 50px;
-        height: 140%;
-    }
-
-    .contactpage {
-        height: 100%;
     }
 
     .entry {
@@ -61,14 +54,14 @@
     }
     
     .contactButton {
-	    display: block;
-	    width: 60%;
+	    display: inline-block;
+	    width: 40%;
 	    margin: 0 auto;
-	    margin-bottom: 10px;
+	    margin: 3px;
     }
 }
 
-@media screen and (max-width: 622px) {
+@media screen and (max-width: $break-medium) {
 
 	h10 { margin: 0px; }
 	
@@ -79,6 +72,3 @@
 	
 	.headerButton { transition: 0s ease; }
 }
-
-@media only screen and (max-width: 481px) {
-	.headerButton { transition: 0s ease; } }
