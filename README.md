@@ -1,4 +1,4 @@
-raffimaurer.github.io
+RaffiMaurer.com
 =====================
 
 The repository contains the (uncompiled) source code for my personal site, RaffiMaurer.com.
