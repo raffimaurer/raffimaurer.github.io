@@ -23,7 +23,7 @@
 .headercontainer {
     width: 100%;
     border: 0px solid black;
-    overflow: hidden; /* contains if #left is longer than #right */;
+    overflow: hidden; /* contains if left is longer than right */;
 }
 
 .headerLeft {
@@ -38,5 +38,5 @@
     border: 0px solid green;
     height: 35%;
     width: 70%;
-    overflow: hidden; /* so #right doesn't wrap below #left */
+    overflow: hidden; /* so right doesn't wrap below left */
 }

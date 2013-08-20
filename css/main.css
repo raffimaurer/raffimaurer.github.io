@@ -546,7 +546,7 @@ table {
   width: 100%;
   border: 0px solid black;
   overflow: hidden;
-  /* contains if #left is longer than #right */
+  /* contains if left is longer than right */
 }
 
 .headerLeft {
@@ -563,7 +563,7 @@ table {
   height: 35%;
   width: 70%;
   overflow: hidden;
-  /* so #right doesn't wrap below #left */
+  /* so right doesn't wrap below left */
 }
 
 h1 {
@@ -676,7 +676,7 @@ body {
   text-align: justify;
   background-color: #F6F6F6;
   margin: 0px auto;
-  margin-top: 70px;
+  margin-top: 90px;
   font-size: 20px;
 }
 
@@ -731,7 +731,7 @@ ul.posts li {
   }
 
   .headerRight {
-    width: 100% !important;
+    width: 100%;
     display: block;
     line-height: 10px;
     float: none;
@@ -742,7 +742,6 @@ ul.posts li {
     margin-top: 4px;
     padding-top: 10px;
     font-size: 16px;
-    padding-bottom: 0px;
     width: 25%;
   }
 
@@ -764,7 +763,7 @@ ul.posts li {
   }
 
   .content {
-    margin-top: 99px;
+    margin-top: 110px;
   }
 
   .footer {

@@ -17,7 +17,7 @@ $break-medium: 622px;
 	}
 
     .headerRight {
-        width: 100% !important;
+        width: 100%;
 		display: block;
         line-height: 10px;
 		float: none;
@@ -28,7 +28,6 @@ $break-medium: 622px;
         margin-top: 4px;
 		padding-top: 10px;
         font-size: 16px;
-        padding-bottom: 0px;
 		width: 25%;
 	}
 	
@@ -48,7 +47,7 @@ $break-medium: 622px;
 	}
 	
 	.content {
-        margin-top: 99px;
+        margin-top: 110px;
     }
 
     .footer {
