@@ -6,6 +6,7 @@ title: Raffi Maurer &#58; Blog
     <div class="wrap">
         <ul class="posts">
             <a href="{{ post.url }}"><li>
+            {% for post in site.posts %}
                 <h1>{{ post.title }}<span> &mdash; {{ post.date | date: "%B %d" }}</span></h1>
                 <p>{{ post.excerpt | split: 'more' | first }}</p>
             </li></a>
