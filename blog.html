@@ -3,16 +3,15 @@ layout: default
 title: Raffi Maurer &#58; Blog
 ---
 <div class="content" style="background: white !important;">
-	<div class="wrap">
-			<ul class="posts">
-  				{% for post in site.posts %}
-      			<a href="{{ post.url }}"><li>
-      				<h1>{{ post.title }}<span> &mdash; {{ post.date | date: "%B %d" }}</span></h1>
-      				<p>{{ post.excerpt | split: 'more' | first }}</p>
-      			</li></a>
-    			{% endfor %}
-  			</ul>
-	</div>
+    <div class="wrap">
+        <ul class="posts">
+            <a href="{{ post.url }}"><li>
+                <h1>{{ post.title }}<span> &mdash; {{ post.date | date: "%B %d" }}</span></h1>
+                <p>{{ post.excerpt | split: 'more' | first }}</p>
+            </li></a>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
 
 {% include footer.html %}
