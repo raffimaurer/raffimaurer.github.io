@@ -1,5 +1,4 @@
-h1 {
-	/* Post List Title */
+h1 { /* Post List Title */
     font-size: 20px;
     text-align: left;
     font-weight: 700;
@@ -15,8 +14,7 @@ h1 {
 	}
 }
 
-h2 { 
-	/* Single Post Title */
+h2 {/* Single Post Title */
 	text-align: center;
 	font-size: 25px;
 	
@@ -35,24 +33,21 @@ h2 {
 	}	
 }
 
-h3 {
-	/* Me page cards */
+h3 { /* Me page cards */
     font-size: 27px;
     text-align: center;
     font-weight: 300;
     color: black;
 }
 
-h4 { 
-	/* Post Detail Line */
+h4 { /* Post Detail Line */
     font-weight: 300;
     font-size: 15px;
 	text-align: left;
 	line-height: 10px;
 }
 
-h10 {
-	/* Header Title */
+h10 { /* Header Title */
     font-size: 25px;
     margin-left: 25px;
     float: center;
@@ -63,4 +58,41 @@ a {
 	&:hover { color: #2a92d3; text-decoration: none; }
 	&:active{ color: #2a92d3; text-decoration: none;}
 	&:link 	{ color: black; text-decoration: none; }
+}
+
+.entry {
+	margin-top: 90px;
+	
+	a {
+		color: black;
+		
+		&:hover {
+			text-decoration: underline;
+			color: black;
+		}
+	}
+    
+    p {
+        line-height: 26px;
+    }
+}
+
+@media #{$break-small} {
+    
+    h3 {
+		font-size: 22px;	
+	}
+
+    h10 {
+        font-size: 26px;
+    }
+    
+    .entry {
+        margin: 0px;
+        font-size: 16px;
+	}
+}
+
+@media #{$break-medium} {
+	h10 { margin: 0px; }
 }

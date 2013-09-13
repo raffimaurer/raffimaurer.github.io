@@ -23,16 +23,17 @@
 
 .contactButton {
 	display: inline-block;
-    padding-top: 5px;
-    height: 35px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     border-radius: 5px;
     margin: 6px;
     font-weight: 400;
     font-size: 15px;
 	width: 90px;
 	box-sizing: border-box;
-}
+    
 
+}
 
 #email {
 	border: 2px solid #84ce67; color: #84ce67;
@@ -56,4 +57,12 @@
 	border: 2px solid #0e76a8; color: #0e76a8;
 	&:hover	{ border: 2px solid #5ea5c6; }
 	&:active { border: 2px solid #036fa0; }
+}
+
+@media #{$break-small} {
+    .contactButton {
+	    display: inline-block;
+	    width: 40%;
+	    margin: 3px;
+    }
 }

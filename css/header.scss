@@ -41,3 +41,46 @@
     width: 70%;
     overflow: hidden; /* so right doesn't wrap below left */
 }
+
+@media #{$break-small} {
+
+	#header {
+		position: absolute;
+		margin-bottom: 40px;
+	}
+    
+	.headerLeft {
+        width: 100%;
+		display: block;
+		border-bottom: 2px solid #bfbfbf;
+		line-height: px;
+		float: none;
+	}
+
+    .headerRight {
+        width: 100%;
+		display: block;
+        line-height: 10px;
+		float: none;
+		height: 38px;
+    }
+
+    .headerButton {
+        margin-top: 4px;
+		padding-top: 10px;
+        font-size: 16px;
+		width: 25%;
+	}
+	
+	.headerButton:hover { border: none; }
+}
+
+@media #{$break-medium} {
+	
+	.headerButton {
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+    
+    .headerButton { transition: 0s ease; }
+}
