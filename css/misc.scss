@@ -26,7 +26,6 @@
 ul.posts {
     list-style-type: none;
 	padding: 0px;
-	margin-top: 110px;
     
 	a {
 		color: black;
@@ -40,7 +39,7 @@ ul.posts {
 	}
 	
 	li {
-        padding-bottom: 30px;
+        padding: 10px;
     }
 }
 
@@ -54,7 +53,7 @@ ul.posts {
     height: 40px;
     font-size: 15px;
     text-align: center;
-    border-top: 1px dashed #bbbbbb;
+    border-top: 1px solid #e0e0e0;
 }
 
 @media #{$break-small} {

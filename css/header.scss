@@ -1,8 +1,9 @@
 #header {
+    box-sizing: border-box;
     width: 100%;
-    height: auto;
+    height: 60px;
     display: inline-block;
-    background-color: #FFF;
+    background: #FFF;
     position: fixed;
     top: 0;
     left: 0;
@@ -15,32 +16,26 @@
 }
 
 .wrap {
-    position: relative;
+
     margin: 0 auto;
     max-width: 700px;
-	width: 92%;
-}
-
-.headercontainer {
-    width: 100%;
-    border: 0px solid black;
-    overflow: hidden; /* contains if left is longer than right */;
+    background: #FFF;
+    overflow: hidden;
 }
 
 .headerLeft {
-    width: 30%;
-    height: 100%;
-    float: left; /* add this */
-    border: 0px solid red;
+    width: 35%;
+    float: left;
     display: inline-block;
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
 
 .headerRight {
-    border: 0px solid green;
-    height: 35%;
-    width: 70%;
-    overflow: hidden; /* so right doesn't wrap below left */
+    width: 65%;
+    overflow: hidden;
 }
+
 
 @media #{$break-small} {
 

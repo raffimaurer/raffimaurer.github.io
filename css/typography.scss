@@ -19,7 +19,7 @@ h1 { /* Post List Title */
 	}
 }
 
-h2 {/* Single Post Title */
+h2 { /* Single Post Title */
 	text-align: center;
 	font-size: 25px;
 	
@@ -52,11 +52,17 @@ h4 { /* Post Detail Line */
 	line-height: 10px;
 }
 
-h10 { /* Header Title */
-    font-size: 25px;
+h5 { /* Header Title */
+    font-size: 20px;
     margin-left: 25px;
     float: center;
-    display: inline-block;
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    margin: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
 }
 
 a {
@@ -66,8 +72,8 @@ a {
 }
 
 .entry {
-	margin-top: 90px;
-	
+	padding: 12px;
+    
 	a {
 		color: black;
 		
@@ -76,10 +82,10 @@ a {
 			color: black;
 		}
 	}
-    
-    p {
-        line-height: 26px;
-    }
+}
+
+p {
+    line-height: 28px;
 }
 
 @media #{$break-small} {
@@ -94,7 +100,7 @@ a {
     
     .entry {
         margin: 0px;
-        font-size: 16px;
+        font-size: 18px;
 	}
 }
 
