@@ -25,21 +25,14 @@
 
 ul.posts {
     list-style-type: none;
-	padding: 0px;
+	padding: 0;
     
 	a {
 		color: black;
-		border-bottom: 1px solid #b5b5b5;
-		
-		&:hover {
-			text-decoration: none;
-			border-bottom: 1px solid #b5b5b5;
-			color: black;
-		}
 	}
 	
 	li {
-        padding: 10px;
+        padding: 15px;
     }
 }
 
