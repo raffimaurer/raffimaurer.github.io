@@ -31,7 +31,7 @@
 .content {
     text-align: justify;
     background-color: #F6F6F6;
-    margin: 0px auto;
+    margin: 0 auto;
 	margin-top: 90px;
     font-size: 20px;
 }
@@ -45,32 +45,33 @@ ul.posts {
 	}
 	
 	li {
-        padding: 15px;
+        padding: 25px 15px 25px 15px;
+        border-bottom: 1px solid #e0e0e0;
+        
+        &:first-child {
+            padding-top: 1px;   
+        }
     }
 }
 
 
 .footer {
-    margin-top: 100px;
-    margin-bottom: 18px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 40px;
     font-size: 15px;
     text-align: center;
-    border-top: 1px solid #e0e0e0;
+    background: #F6F6F6;
+    padding: 15px;
+    
+    p {
+        margin: 0; 
+        display: inline-block;   
+    }
 }
 
 @media #{$break-small} {
 	
 	.content {
-        margin-top: 110px;
+        margin-top: 100px;
+        font-size: 18px;
     }
-
-    .footer {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    
 }

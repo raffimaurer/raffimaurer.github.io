@@ -7,10 +7,12 @@ permalink: /blog/
     <div class="wrap">
         <ul class="posts">
             {% for post in site.posts %}
-                <a href="{{ post.url }}"><li>
-                    <h1>{{ post.title }}<span> &mdash; {{ post.date | date: "%B %d" }}</span></h1>
-                    <p>{{ post.excerpt | split: 'more' | second }}</p>
-                </li></a>
+               <li>
+                    <a href="{{ post.url }}">
+                         <h1>{{ post.title }}<span> &mdash; {{ post.date | date: "%B %d" }}</span></h1>
+                    </a>
+                    <p>{{ post.content }}</p>
+                </li>
             {% endfor %}
         </ul>
     </div>
