@@ -14,15 +14,6 @@
         $(function(){ var location = $(this).parent().parent()
         $('.headerLeft').click(function() { $('body,html').animate({scrollTop:0},800);});});
     </script>
-</head>
-    
-<body>
-    {% include header.html %}
-    {{ content }}
-</body>
-</html>
-
-<script>
     
     <script type="text/javascript">
 var metas = document.getElementsByTagName('meta');
@@ -43,5 +34,10 @@ function gestureStart() {
   }
 }
 </script>
+</head>
     
-</script>
+<body>
+    {% include header.html %}
+    {{ content }}
+</body>
+</html>
