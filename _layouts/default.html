@@ -4,7 +4,7 @@
     <title>{{ page.title }}</title>
     
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0 maximum-scale=1.0 user-scalable=no">
         
     <link rel="stylesheet" href="/css/main.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
@@ -14,26 +14,6 @@
         $(function(){ var location = $(this).parent().parent()
         $('.headerLeft').click(function() { $('body,html').animate({scrollTop:0},800);});});
     </script>
-    
-    <script type="text/javascript">
-var metas = document.getElementsByTagName('meta');
-var i;
-if (navigator.userAgent.match(/iPhone/i)) {
-  for (i=0; i<metas.length; i++) {
-    if (metas[i].name == "viewport") {
-      metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
-    }
-  }
-  document.addEventListener("gesturestart", gestureStart, false);
-}
-function gestureStart() {
-  for (i=0; i<metas.length; i++) {
-    if (metas[i].name == "viewport") {
-      metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
-    }
-  }
-}
-</script>
 </head>
     
 <body>
