@@ -12,4 +12,4 @@ This is in stark contrast to when a similar thing happened on Android when Ice C
 
 But on iOS, I suppose it's not too unanticipated though, developers on the platform have already proven their commitment through rebuilding their apps for the iPad when it launched and updating their apps for the larger screen for iPhone 5. At both of those points in time, there were concerns about a possible eruption of fragmentation - but such never materialised because it was masked by extraordinary developer adoption.
 
-Android might still be a more all-encompassing ecosystem, but iOS wins down on the quality front. This makes for a stable and strong ecosystem.
+Android might still be a more all-encompassing ecosystem, but iOS wins hand down on the quality front. This makes for a stable and strong ecosystem.
