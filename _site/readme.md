@@ -1,6 +1,6 @@
 RaffiMaurer.com
 =====================
 
-This repository contains the (uncompiled) source code for my personal site, RaffiMaurer.com.
+This repository contains the source code for my personal site, RaffiMaurer.com, built on Jekyll.
 
-The site is built on Jekyll and styled with Sass.
+Feel free to poke around and critique my code. I hope you're not overly horrified.
