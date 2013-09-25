@@ -12,4 +12,4 @@ Just remember that it was under Steve's leadership that Apple shipped the [iTune
 
 I think people are searching for something that doesn't actually exist - Apple is executing its roadmap and changing marginally along the way. There things that definitely have changed in terms of operations (such as payment of dividends to investors and Mac production in the USA), but people are not approaching things from that angle anyway.
 
-All the "Steve Jobs would never have done that" talk is just an implicit stab at Apple that, for some reason, everyone seems to want to make the moment.
+All the "Steve Jobs would never have done that" talk is just an implicit stab at Apple that, for some reason, everyone seems to want to make at the moment.
