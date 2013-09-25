@@ -1,7 +1,6 @@
 ---
 layout: post
 title: iOS proves itself again
-permalink: /blog/ios-proves-itself
 published: true
 ---
 Say what you want about iOS's new interface, but there's no denying that the most radical update ever made to the OS has only come to once again prove the strength of the ecosystem and developer community.

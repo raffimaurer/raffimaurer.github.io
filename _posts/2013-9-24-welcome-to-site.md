@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Hi there!
-permalink: /blog/welcome
 published: true
 ---
 
