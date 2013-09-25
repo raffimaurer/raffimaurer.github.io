@@ -39,10 +39,6 @@
 ul.posts {
     list-style-type: none;
 	padding: 0;
-    
-	a {
-		color: black;
-	}
 	
 	li {
         padding: 25px 15px 25px 15px;
@@ -50,6 +46,22 @@ ul.posts {
         
         &:first-child {
             padding-top: 1px;   
+        }
+        
+        a {
+		        color: black;
+        }
+        
+        p {
+            a {
+		        color: black;
+		
+		        &:hover {
+                    transition: .2s ease;
+			        text-decoration: underline;
+			        color: $dark-blue;
+		        }
+            }
         }
     }
 }

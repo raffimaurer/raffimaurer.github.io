@@ -75,11 +75,12 @@ a {
 	padding: 15px;
     
 	a {
-		color: ;
+		color: black;
 		
 		&:hover {
+            transition: .2s ease;
 			text-decoration: underline;
-			color: black;
+			color: $dark-blue;
 		}
 	}
 }
