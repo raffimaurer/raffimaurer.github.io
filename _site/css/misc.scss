@@ -1,3 +1,10 @@
+body {
+    background-color: #F6F6F6;
+    margin: 0 auto;
+	margin-top: 90px;
+    font-size: 20px;
+}
+
 .wrap {
     margin: 0 auto;
     max-width: 700px;
@@ -28,19 +35,12 @@
     font-weight: 300;
 }
 
-.content {
-    text-align: justify;
-    background-color: #F6F6F6;
-    margin: 0 auto;
-	margin-top: 90px;
-    font-size: 20px;
-}
-
 ul.posts {
     list-style-type: none;
 	padding: 0;
+    text-align: justify;
     
-	/* The below is abysmal, feel shame + rewrite when you can */
+	/* The below is abysmal, feel shameful + rewrite when you can */
 	li {
         padding: 25px 15px 25px 15px;
         border-bottom: 1px solid #e0e0e0;
@@ -67,6 +67,12 @@ ul.posts {
     }
 }
 
+.bloghead {
+    background: #F6F6F6;
+    padding: 0px 20px 20px 20px;
+    text-align: center;
+}
+
 .footer {
     font-size: 15px;
     text-align: center;
@@ -81,7 +87,7 @@ ul.posts {
 
 @media #{$break-small} {
 	
-	.content {
+	body {
         margin-top: 100px;
         font-size: 18px;
     }
