@@ -21,6 +21,14 @@
 	}
 }
 
+.headerButton-selected {
+     color: $dark-blue;
+    
+    &:hover {
+         color: $dark-blue;   
+    }
+}
+
 .contactButton {
 	display: inline-block;
     padding-top: 6px;
@@ -61,6 +69,11 @@
 	border: 2px solid #171515; color: #171515;
 	&:hover	{ border: 2px solid #adadad; }
 	&:active { border: 2px solid #171515; }
+}
+
+.socialicon {
+     width: 15px;
+    margin-right: 5px;
 }
 
 @media #{$break-small} {
