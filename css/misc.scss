@@ -1,5 +1,5 @@
 body {
-    background-color: #F6F6F6;
+    background-color: $light-gray;
     margin: 0 auto;
 	margin-top: 90px;
     font-size: 20px;
@@ -46,9 +46,14 @@ ul.posts {
 	padding: 0;
     text-align: justify;
     
+    h1 {
+         color: $dark-blue;   
+    }
+    
 	/* The below is abysmal, feel shameful + rewrite when you can */
 	li {
-        padding: 25px 15px 25px 15px;
+        transition: .3s ease;
+        padding: 10px 15px 10px 15px;
         border-bottom: 1px solid #e0e0e0;
         
         &:first-child {
@@ -57,6 +62,11 @@ ul.posts {
         
         a {
             color: black;
+
+        }
+        
+        &:hover {
+            background: $light-gray;
         }
         
         p {
@@ -74,7 +84,7 @@ ul.posts {
 }
 
 .bloghead {
-    background: #F6F6F6;
+    background: $light-gray;
     padding: 0px 20px 20px 20px;
     text-align: center;
 }
@@ -82,7 +92,7 @@ ul.posts {
 .footer {
     font-size: 15px;
     text-align: center;
-    background: #F6F6F6;
+    background: $light-gray;
     padding: 15px;
     
     p {
