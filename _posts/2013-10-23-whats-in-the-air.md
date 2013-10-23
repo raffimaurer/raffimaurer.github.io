@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What's In The Air
+title: What's In The Air?
 published: true
 ---
 There is no element of surprise in the direction that Apple took in re-branding the 9.7” iPad as the iPad Air; the name definitely helps to give the device some extra prestige and attraction setting itself apart from the cheaper iPad Mini.
