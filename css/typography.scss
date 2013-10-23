@@ -72,13 +72,8 @@ a {
     text-align: justify;
     
 	a {
-		color: black;
-		
-		&:hover {
-            transition: .2s ease;
-			text-decoration: underline;
-			color: $dark-blue;
-		}
+		color: $dark-blue;
+        text-decoration: underline;
 	}
 }
 
@@ -93,7 +88,6 @@ blockquote {
     margin-left: 0;
     margin: 0;
     border-left: 7px solid $dark-blue;
-    
 }
 
 code {
@@ -107,15 +101,9 @@ code {
 
 @media #{$break-small} {
     
-    h1 {
-        font-size: 22px;
-    }
+    h1 { font-size: 22px; }
     
-    h3 {
-		font-size: 22px;	
-	}
+    h3 { font-size: 22px;}
 }
 
-@media #{$break-medium} {
-
-}
+@media #{$break-medium} {}
