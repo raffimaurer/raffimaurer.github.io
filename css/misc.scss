@@ -1,5 +1,4 @@
 body {
-    background-color: $light-gray;
     margin: 0 auto;
 	margin-top: 90px;
     font-size: 20px;
@@ -42,9 +41,9 @@ body {
 }
 
 ul.posts {
-    list-style-type: none;
 	padding: 0;
     text-align: justify;
+   
     
     h1 {
          color: $dark-blue;   
@@ -52,8 +51,9 @@ ul.posts {
     
 	/* The below is abysmal, feel shameful + rewrite when you can */
 	li {
-        transition: .3s ease;
-        padding: 10px 15px 10px 15px;
+        transition: 0.5s ease;
+        padding: 15px;
+        border-left: 4px solid transparent;
         border-bottom: 1px solid #e0e0e0;
         
         &:first-child {
@@ -65,7 +65,7 @@ ul.posts {
         }
         
         &:hover {
-            background: $light-gray;
+            border-left: 4px solid $dark-blue;
         }
         
         p {
@@ -84,15 +84,20 @@ ul.posts {
 
 .bloghead {
     background: $light-gray;
-    padding: 0px 20px 20px 20px;
+    padding: 30px 20px 20px 20px;
     text-align: center;
+    margin-top: -35px;
 }
 
 .footer {
     font-size: 15px;
-    text-align: center;
-    background: $light-gray;
-    padding: 15px;
+    text-align: left;
+
+    
+    .wrap {
+        border-top: 1px solid #e8e8e8;
+        padding: 15px;
+    }
     
     p {
         margin: 0; 

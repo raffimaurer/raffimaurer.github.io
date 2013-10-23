@@ -14,7 +14,7 @@ permalink: /blog/
             {% for post in site.posts %}
                <li>
                     <a href="{{ post.url }}">
-                    <h1>{{ post.title }}<span> &mdash; {{ post.date | date: "%B %d" }}</span></h1>
+                    <h1>{{ post.title }}<span>{{ post.date | date: "%B %d" }}</span></h1>
                     <p>{{ post.content | strip_html | truncatewords:40 }}</p>
                 </a>
                 </li>
