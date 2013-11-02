@@ -1,0 +1,35 @@
+/*
+
+ADDITIONAL RESETS TO NORMALIZE.SCSS
+--------------------------------------------------
+
+*/
+
+body {
+    margin: 0 auto;
+	margin-top: 90px;
+    font-size: 20px;
+}
+
+* {
+     box-sizing: border-box;
+}
+
+.grid-pad { padding: 0; }
+
+.wrap {
+    margin: 0 auto;
+    max-width: 700px;
+    background: #FFF;
+    overflow: hidden;
+    
+    img {
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
+
+.content {
+    margin-top: 55px;
+}

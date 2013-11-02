@@ -5,16 +5,40 @@ layout: default
 excerpt: Web Designer and Tech Blogger from London, UK
 ---
 <div class="content animated fadeInDown">
-    <div style="max-width: 750px !important; margin: 0 auto; padding: 8px;">
+    <div style="max-width: 800px !important; margin: 0 auto; padding: 8px;">
         
-        <div class="about animated fadeInDown">
-            <h3>Hi, my name is Raffi Maurer.
-            <br>I'm a 15 year old<strong> web designer</strong>, <strong>programmer </strong>
+        <div class="about-head animated fadeInDown">
+            <img src="{{ site.url }}/assets/me.png">
+            <h3>Raffi Maurer
+            <br>15 year old<strong> web designer</strong>, <strong>programmer </strong>
             <br>and <strong>writer </strong>from London, UK.</h3>
         </div>
+
+        <div class="grid grid-pad">
         
-        <div class="about animated fadeInDown">
-            <h3>Want to chat about something or ask a question?<br><strong>Feel free to get in touch.</strong></h3>
+        <div class="col-1-3 about-posts animated fadeInDown">
+            <div class="blog-index">  
+            <h5>Recent posts</h5>
+            {% for post in site.posts limit:3 %}
+                <ul class="recent-posts"> 
+                    <li>
+                        <a href="{{ post.url }}">
+                        <p>{{ post.title }}</p>
+                    </li>
+                </ul>
+            {% endfor %}
+    </div>
+        </div>
+        
+        
+        <div class="col-1-3 about-map animated fadeInDown">
+            <img src="{{ site.url }}/assets/map.png">
+            <h3>Based in London</h3>
+        </div>
+        
+        
+        <div class="col-1-3 about-contact animated fadeInDown">
+            <h3><strong>Feel free to get in touch.</strong></h3>
             <a class="contactButton" id="email" href="mailto:raffimaurer@gmail.com">Email</a>
             <a class="contactButton" id="twitter" href="http://twitter.com/RaffiMaurer">Twitter</a>
             <a class="contactButton" id="google" href="http://plus.google.com/102812704594829305196/">Google+</a>
@@ -22,6 +46,9 @@ excerpt: Web Designer and Tech Blogger from London, UK
             <a class="contactButton" id="github" href="http://github.com/raffimaurer">GitHub</a>
         </div>
         
+        
+        </div>
+        </div>
     </div>
 </div>
 

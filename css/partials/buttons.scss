@@ -1,0 +1,90 @@
+/*
+
+BUTTON STYLES
+--------------------------------------------------
+
+TABLE OF CONTENTS:
+1. .headerButton 	// Buttons appearing in page header
+2. .contactButton 	// Buttons appearing in contact area on homepage
+	+ various colour variants
+
+*/
+
+.headerButton {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 14px;
+    margin-left: 6px;
+    margin-right: 6px;
+    height: 100%;
+    border-bottom: 0px solid transparent;
+	width: 92px;
+	text-align: center;
+    color: black;
+	font-weight: 400;
+    font-size: 18px;
+	transition: .2s ease;
+	-webkit-transition: .2s ease;
+	box-sizing: border-box;
+
+	&:hover {
+		border-bottom: 4px solid $dark-blue;
+		color: #8d8d8d;
+	}
+}
+
+.headerButton-selected {
+     color: $dark-blue;
+    
+    &:hover {
+         color: $dark-blue;   
+    }
+}
+
+.contactButton {
+	display: inline-block;
+	padding: 6px 0px 6px 0px;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: 400;
+    font-size: 15px;
+	width: 80%;
+}
+
+#email {
+	border: 2px solid #84ce67; color: #84ce67;
+	&:hover { border: 2px solid #a7da92; }
+	&:active { border: 2px solid #5bb935; }
+}
+
+#twitter {
+	border: 2px solid #00acee; color: #00acee;
+	&:hover { border: 2px solid #00C4FF; }
+	&:active { border: 2px solid #00a0d1; }
+}
+
+#google {
+	border: 2px solid #d96254; color: #d96254;
+	&:hover { border: 2px solid #e3958b; }
+	&:active { border: 2px solid #be2c1c; }
+}
+
+#linkedin {
+	border: 2px solid #0e76a8; color: #0e76a8;
+	&:hover	{ border: 2px solid #5ea5c6; }
+	&:active { border: 2px solid #036fa0; }
+}
+
+#github {
+	border: 2px solid #171515; color: #171515;
+	&:hover	{ border: 2px solid #adadad; }
+	&:active { border: 2px solid #171515; }
+}
+
+@media #{$break-small} {
+    .contactButton {
+	    display: inline-block;
+	    width: 40%;
+	    margin: 3px;
+    }
+}
