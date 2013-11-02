@@ -1,33 +1,7 @@
-/*
-
-STYLESHEET IMPORTS
---------------------------------------------------
-
-Authored by Raffi Maurer.
-a. Import partials
-b. Import modules
-
-*/
-
-
-
-/*--------------------*\
-    	PARTIALS
-\*--------------------*/
-
-@import "partials/normalize";	// Initial reset
-@import "partials/reset";		// My added resets
-@import "partials/variables";	// Global variables
-@import "partials/typography";	// Headers & paragraphs
-@import "partials/grids";		// Simple Grid dependencies
-@import "partials/buttons";		// Button styles
-@import "partials/animate";		// Animate.css dependencies
-
-
-/*--------------------*\
-    	MODULES
-\*--------------------*/
-
-@import "modules/header";		// Header module
-@import "modules/footer";		// Footer module
-@import "modules/pages";		// Page-specific styles
+@import "normalize";
+@import "variables";
+@import "typography";
+@import "buttons";
+@import "animate";
+@import "header";
+@import "misc";
