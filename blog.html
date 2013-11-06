@@ -4,7 +4,7 @@ title: Raffi Maurer &#58; Blog
 name: Blog
 permalink: /blog/
 ---
-<div class="content" style="background: white !important;">
+<div class="content">
     <div class="bloghead">
         <h5>Blog</h5>
         <p>Here you'll find short and long posts on tech, design and development</p>
@@ -15,7 +15,7 @@ permalink: /blog/
                <li>
                     <a href="{{ post.url }}">
                     <h1>{{ post.title }}<span>{{ post.date | date: "%B %d" }}</span></h1>
-                    <p>{{ post.content | strip_html | truncatewords:40 }}</p>
+                    <p>{{ post.content | strip_html | truncatewords:40, ' [...]' }}</p>
                 </a>
                 </li>
             {% endfor %}

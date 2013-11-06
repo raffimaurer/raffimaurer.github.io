@@ -1,0 +1,69 @@
+/*
+
+BUTTON STYLES
+--------------------------------------------------
+
+TABLE OF CONTENTS:
+1. .headerButton 	// Buttons appearing in page header
+2. .contactButton 	// Buttons appearing in contact area on homepage
+	+ various colour variants
+
+*/
+
+.headerButton {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 14px;
+    margin: 0px 10px 0px 10px;
+    height: 100%;
+    border-top: 4px solid transparent;
+	width: 92px;
+	text-align: center;
+    color: black;
+	font-weight: 400;
+    font-size: 18px;
+	transition: 0.2s ease;
+	box-sizing: border-box;
+
+	&:hover {
+		border-top: 4px solid $dark-blue;
+		color: #8d8d8d;
+	}
+
+	a {
+		color: black;
+	}
+}
+
+.headerButton-selected {
+     color: $dark-blue;
+    
+    &:hover {
+         color: $dark-blue;   
+    }
+}
+
+.contactButton {
+	display: inline-block;
+	padding: 8px;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: 400;
+    font-size: 15px;
+	transition: 0.3s;
+	border: 2px solid #DCDCDC;
+	width: 80px;
+
+	&:hover {
+		border: 2px solid #8C8C8C ;
+	}
+}
+
+
+@media #{$break-small} {
+    .contactButton {
+	    display: inline-block;
+	    width: 40%;
+	    margin: 3px;
+    }
+}

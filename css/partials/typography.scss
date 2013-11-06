@@ -1,0 +1,133 @@
+/*
+
+TYPOGRAPHY
+--------------------------------------------------
+
+TABLE OF CONTENTS:
+1. body     // Base styles
+2. h1       // Post list title
+3. h2       // Single post title
+4. h3       // 'Me' page cards
+5. h4       // Post detail line
+6. h5       // Site header title
+7. .entry   // Post layout container
+
+*/
+
+body {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.7em;
+    font-weight: 700;
+    text-decoration: none;
+	
+	span {
+		font-weight: 300;
+        color: #000;
+        font-size: 65%;
+        font-style: italic;
+        color: darken($light-grey, 40%)
+	}
+}
+
+h2 {
+	font-size: 1.6em;
+	
+	span {
+		font-weight: 300;
+		font-size: 20px;
+		
+		&:after {
+			content: '';
+			width: 75%;
+			height: 1px;
+			display: block;
+			margin: 1.5rem auto;
+			background-color: #dedede;
+		}
+	}	
+}
+
+h3 {
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 300;
+    color: black;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 15px;
+	text-align: left;
+	line-height: 10px;
+}
+
+h5 {
+    font-size: 20px;
+    margin-left: 25px;
+    float: center;
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+a {
+	color: black;
+    &:hover { color: #2a92d3; text-decoration: none; }
+	&:active{ color: #2a92d3; text-decoration: none;}
+	&:link 	{ color: black; text-decoration: none; }
+}
+
+.entry {
+	padding: 15px;
+    text-align: left;
+    
+	a {
+		color: $dark-blue;
+        text-decoration: underline;
+
+        &:hover {
+            color: lighten($dark-blue, 10%)
+        }
+	}
+}
+
+p {
+    line-height: 30px;
+}
+
+blockquote {
+    background: #f8f8f8;
+    padding: 20px;
+    width: 100%;
+    margin-left: 0;
+    margin: 0;
+    border-left: 7px solid $dark-blue;
+}
+
+code {
+    font-size: 80%;
+    border: 1px solid #a3a3a3;
+    border-radius: 5px;
+    padding: 0px 5px 0px 5px;
+    margin: 0px 5px 0px 5px;
+    background: #f8f8f8;
+}
+
+@media #{$break-small} {
+    
+    h1 {
+        font-size: 22px;
+    }
+    
+    h3 {
+        font-size: 22px;
+    }
+}
