@@ -11,33 +11,25 @@ body {
     border-top: 4px solid #929292;
 }
 
-.about {
-    padding: 15px;
-    padding-left: 25px;
-	padding-right: 25px;
-	text-align: center;
-    font-weight: 300;
-    margin: 0.5%;
-    display: block;
-}
-
 .about-details {
-    width: 70%;
+    width: 65%;
 }
 
 .about-head {
-    @extend .about;
     @extend .animated;
     @extend .fadeInDown;
+
+    padding: 25px;
+    text-align: center;
     margin: 30px 0.5% 0.5% 10px;
 
     h3 {
         text-align: left;
-
         
         strong {
             letter-spacing: 0.04em;
             text-transform: uppercase;
+            display: block;
         }
 
         &:after {
@@ -51,21 +43,12 @@ body {
     }
 
     img {
+        float: left;
         height: 120px;
         border-radius: 100px;
-        display: inline-block;
         border: 2px solid #dedede;
         padding: 0;
         margin: 20px;
-    }
-
-    .headerButton {
-        float: none;
-    }
-
-    p {
-        float: none;
-        display: inline-block;
     }
 }
 
@@ -108,10 +91,10 @@ body {
 }
 
 .entry {
-    width: 750px;
+    max-width: 750px;
 }
 
-@media screen and (max-width: 830px) {
+@media #{$break-large} {
     .about-details {
         width: 100%;
     }
@@ -121,7 +104,18 @@ body {
 @media screen and (max-width: 500px) {
     
     body {
-        font-size: 18px;
+        font-size: 1em;
+    }
+
+    .about-head {
+        h3 {
+            text-align: center;
+        }
+
+        img {
+            float: none;
+            margin: 0 auto;
+        }
     }
 
 }

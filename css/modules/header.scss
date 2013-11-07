@@ -43,36 +43,7 @@ c. .headerRight // Right segment
 }
 
 
-@media #{$break-small} {
 
-	.header {
-		margin-top: 0;
-	}
-    
-	.headerLeft {
-        width: 100%;
-		display: block;
-		float: none;
-        text-align: center;
-	}
-
-    .headerRight {
-        width: 100%;
-		display: block;
-        line-height: 10px;
-		float: none;
-		height: 38px;
-    }
-
-    .headerButton {
-        margin-top: 4px;
-		padding-top: 10px;
-        font-size: 16px;
-		width: 25%;
-	}
-	
-	.headerButton:hover { border: none; }
-}
 
 @media #{$break-medium} {
 	
@@ -81,5 +52,46 @@ c. .headerRight // Right segment
 		margin-right: 4px;
 	}
     
-    .headerButton { transition: 0s ease; }
+    .headerButton {
+        transition: 0s ease;
+    }
+
+    .headerLeft {
+        width: 38%;
+    }
+
+    .headerRight {
+        width: 62%;
+    }
+}
+
+@media #{$break-small} {
+
+    .header {
+        margin-top: 0;
+    }
+    
+    .headerLeft {
+        width: 100%;
+        display: block;
+        float: none;
+        text-align: center;
+    }
+
+    .headerRight {
+        width: 100%;
+        display: block;
+        line-height: 10px;
+        float: none;
+        height: 38px;
+    }
+
+    .headerButton {
+        margin-top: 4px;
+        padding-top: 10px;
+        font-size: 16px;
+        width: 25%;
+    }
+    
+    .headerButton:hover { border: none; }
 }
