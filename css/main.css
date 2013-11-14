@@ -741,6 +741,7 @@ TABLE OF CONTENTS:
 
 .headerButton-selected {
   color: #0e76a8;
+  border-bottom: 4px solid black;
 }
 .headerButton-selected:hover {
   color: #0e76a8;
@@ -762,7 +763,7 @@ TABLE OF CONTENTS:
   border: 2px solid #8C8C8C;
 }
 .contactButton a {
-  color: black;
+  color: #f6f6f6;
 }
 
 @media screen and (max-width: 500px) {

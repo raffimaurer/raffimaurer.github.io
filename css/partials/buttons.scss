@@ -37,6 +37,7 @@ TABLE OF CONTENTS:
 
 .headerButton-selected {
      color: $dark-blue;
+     border-bottom: 4px solid black;
     
     &:hover {
          color: $dark-blue;   
@@ -53,14 +54,14 @@ TABLE OF CONTENTS:
 	transition: 0.3s;
 	border: 2px solid #DCDCDC;
 	width: 80px;
-	color: $light-grey;
+	color: $light-grey; 
 
 	&:hover {
 		border: 2px solid #8C8C8C;
 	}
 
 	a {
-		color: black;
+		color: $light-grey;
 	}
 }
 
