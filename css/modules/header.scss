@@ -27,7 +27,7 @@ c. .headerRight // Right segment
 
 .headerLeft {
     float: left;
-    width: 30%;
+    width: 35%;
     display: inline-block;
     padding-top: 18px;
     padding-bottom: 18px;
@@ -39,23 +39,14 @@ c. .headerRight // Right segment
 
 .headerRight {
     overflow: hidden;
-    width: 70%;
+    width: 65%;
 }
 
 
 
 
 @media #{$break-medium} {
-	
-	.headerButton {
-		margin-left: 4px;
-		margin-right: 4px;
-	}
     
-    .headerButton {
-        transition: 0s ease;
-    }
-
     .headerLeft {
         width: 38%;
     }

@@ -17,17 +17,21 @@ TABLE OF CONTENTS:
     margin: 0px 10px 0px 10px;
     height: 100%;
     border-top: 4px solid transparent;
-	width: 92px;
+	width: 5.7em;
 	text-align: center;
     color: black;
 	font-weight: 400;
     font-size: 18px;
 	transition: 0.2s ease;
-	box-sizing: border-box;
 
 	&:hover {
 		border-top: 4px solid $dark-blue;
 		color: #8d8d8d;
+
+		a {
+			color: $dark-blue;
+			transition: inherit;
+		}
 	}
 
 	a {
@@ -37,7 +41,7 @@ TABLE OF CONTENTS:
 
 .headerButton-selected {
      color: $dark-blue;
-     border-bottom: 4px solid black;
+     border-bottom: 0.2em solid black;
     
     &:hover {
          color: $dark-blue;   
@@ -47,22 +51,35 @@ TABLE OF CONTENTS:
 .contactButton {
 	display: inline-block;
 	padding: 8px;
-    border-radius: 5px;
-    margin: 5px;
+    border-radius: 0.35em;
+    margin: 0.25em;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 0.75em;
 	transition: 0.3s;
-	border: 2px solid #DCDCDC;
-	width: 80px;
-	color: $light-grey; 
+	border: 0.15em solid #DCDCDC;
+	width: 5.5em;
 
 	&:hover {
-		border: 2px solid #8C8C8C;
+		border: 0.15em solid #8C8C8C;
 	}
 
 	a {
-		color: $light-grey;
+		color: #8C8C8C;
 	}
+}
+
+
+@media #{$break-medium} {
+	
+	.headerButton {
+		width: 5em;
+		margin-left: 0.25em;
+		margin-right: 0.25em;
+	}
+    
+    .headerButton {
+        transition: 0s ease;
+    }
 }
 
 
@@ -70,6 +87,6 @@ TABLE OF CONTENTS:
     .contactButton {
 	    display: inline-block;
 	    width: 40%;
-	    margin: 3px;
+	    margin: 0.15;
     }
 }

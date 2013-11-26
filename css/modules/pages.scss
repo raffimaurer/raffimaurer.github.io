@@ -8,7 +8,7 @@ PAGE-SPECIFIC STYLES
 // ABOUT PAGE
 
 body {
-    border-top: 4px solid #929292;
+    border-top: 0.2em solid #929292;
 }
 
 .about-details {
@@ -19,7 +19,7 @@ body {
     @extend .animated;
     @extend .fadeInDown;
 
-    padding: 25px;
+    padding: 1.25em;
     text-align: center;
     margin: 30px 0.5% 0.5% 10px;
 
@@ -71,8 +71,6 @@ body {
 	li {
         transition: 0.5s ease;
         padding: 15px;
-        border-left: 4px solid transparent;
-        border-bottom: 1px solid #e0e0e0;
         text-align: left;
 
         a {
@@ -86,22 +84,23 @@ body {
 }
 
 .bloghead {
-    padding: 30px;
     text-align: center;
+    padding: 1em;
 }
 
 .entry {
-    max-width: 750px;
+    max-width: 770px;
 }
 
 @media #{$break-large} {
+
     .about-details {
         width: 100%;
     }
 }
 
 
-@media screen and (max-width: 500px) {
+@media #{$break-small} {
     
     body {
         font-size: 1em;
@@ -112,10 +111,13 @@ body {
             text-align: center;
         }
 
+        h5:after {
+            content: "he";
+        }
+
         img {
             float: none;
             margin: 0 auto;
         }
     }
-
 }
