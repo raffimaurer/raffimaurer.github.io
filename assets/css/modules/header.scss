@@ -1,0 +1,71 @@
+/*
+
+HEADER MODULE
+--------------------------------------------------
+
+TABLE OF CONTENTS:
+a. .header      // Header container
+b. .headerLeft  // Left segment
+c. .headerRight // Right segment
+
+*/
+
+.header {
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+
+    h1 {
+        font-size: 1.1em;
+        margin-left: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin: 0;
+
+        a { color: black; }
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+    	list-style: none;
+    	display: inline-block;
+    }
+}
+
+.headerLeft {
+    float: left;
+    width: 35%;
+    padding: 1em 0em 1em 0em;
+
+    @media #{$break-medium} {
+        width: 38%;
+    }
+
+    @media #{$break-small} {
+        width: 100% !important;
+        display: block;
+        float: none;
+        text-align: center;
+    }
+}
+
+.headerRight {
+    overflow: hidden;
+    width: 65%;
+
+    @media #{$break-medium} {
+        width: 62%;
+    }
+
+    @media #{$break-small} {
+        width: 100% !important;
+        display: block;
+        line-height: 10px;
+        float: none;
+        height: 38px;
+    }
+}

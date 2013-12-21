@@ -5,25 +5,19 @@ ADDITIONAL RESETS TO NORMALIZE.SCSS
 
 */
 
-body {
-    margin: 0 auto;
-	margin-top: 90px;
-    font-size: 20px;
-    background-color: #F6F6F6;
-}
-
 * {
-     box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.grid-pad {
-    padding: 0;
-    margin: 0;
+body {
+    border-top: 0.2em solid #929292;
+    font-size: 20px; // What where you thinking?
+    background-color: #F6F6F6;
 }
 
 .wrap {
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 45em;
     overflow: hidden;
     
     img {

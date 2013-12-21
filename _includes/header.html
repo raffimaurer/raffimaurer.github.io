@@ -1,14 +1,30 @@
 <header class="header">
     <div class="wrap">
         <div class="headerLeft">
-            <h5>Raffi Maurer</h5>
+            <h1><a href="/">Raffi Maurer</a></h1>
         </div>
         <div class="headerRight"><nav role="navigation">
-            <nav>
+            <nav role="navigation">
                 <ul class="navigation">
-                    <li class="headerButton"><a href="/">About</a></li>
-                    <li class="headerButton"><a href="/blog/">Blog</a></li>
-                    <li class="headerButton"><a href="/work.html">Work</a></li>
+
+                    {% if page.active == "about" %}
+                        <li class="headerButton--selected"><a href="/about.html">About</a></li>
+                    {% else %}
+                        <li class="headerButton"><a href="/about.html">About</a></li>
+                    {% endif %}
+
+                    {% if page.active == "blog" %}
+                        <li class="headerButton--selected"><a href="/blog/">Blog</a></li>
+                    {% else %}
+                        <li class="headerButton"><a href="/blog/">Blog</a></li>
+                    {% endif %}
+
+                    {% if page.active == "work" %}
+                        <li class="headerButton--selected"><a href="/work.html">Work</a></li>
+                    {% else %}
+                        <li class="headerButton"><a href="/work.html">Work</a></li>
+                    {% endif %}
+
                 </ul>
             </nav>
         </div>
