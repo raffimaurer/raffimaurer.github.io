@@ -23,13 +23,13 @@ h1 {
     font-size: 1.7em;
     font-weight: 600;
     text-decoration: none;
-	
-	span {
-		font-weight: 300;
+    
+    span {
+        font-weight: 300;
         color: #000;
         font-size: 65%;
         color: darken($light-grey, 40%)
-	}
+    }
 
     @media #{$break-small} {
         font-size: 1.4em;
@@ -37,21 +37,21 @@ h1 {
 }
 
 h2 {
-	font-size: 1.6em;
-	
-	span {
-		font-weight: 300;
-		font-size: 20px;
-		
-		&:after {
-			content: '';
-			width: 75%;
-			height: 1px;
-			display: block;
-			margin: 1.5rem auto;
-			background-color: #dedede;
-		}
-	}	
+    font-size: 1.6em;
+    
+    span {
+        font-weight: 300;
+        font-size: 20px;
+        
+        &:after {
+            content: '';
+            width: 75%;
+            height: 1px;
+            display: block;
+            margin: 1.5rem auto;
+            background-color: #dedede;
+        }
+    }   
 }
 
 h3 {
@@ -69,41 +69,19 @@ h3 {
 h4 {
     font-weight: 300;
     font-size: 15px;
-	text-align: left;
-	line-height: 10px;
+    text-align: left;
+    line-height: 10px;
 }
 
 a {
-	color: black;
+    color: black;
     &:hover { color: $accent; text-decoration: none; }
-	&:active{ color: #2a92d3; text-decoration: none;}
-	&:link 	{ color: black; text-decoration: none; }
+    &:active{ color: #2a92d3; text-decoration: none;}
+    &:link  { color: black; text-decoration: none; }
 }
 
 p {
     line-height: 30px;
-}
-
-.entry {
-	padding: 15px;
-    text-align: left;
-
-    p {
-        font-family: "freight-text-pro", serif;
-
-        @media #{$break-small} {
-            font-size: 0.9em;
-        }
-    }
-    
-	a {
-		color: $accent;
-        text-decoration: underline;
-
-        &:hover {
-            color: lighten($accent, 10%)
-        }
-	}
 }
 
 blockquote {

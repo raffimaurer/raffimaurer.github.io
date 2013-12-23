@@ -1,0 +1,50 @@
+body {
+    border-top: 0.2em solid #929292;
+    font-size: 20px; // What where you thinking?
+    background-color: #F6F6F6;
+}
+
+.wrap {
+    margin: 0 auto;
+    max-width: 45em;
+    overflow: hidden;
+    
+    img {
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
+
+.wrap--entry {
+    @extend .wrap;
+    @extend .entry;
+
+    max-width: 40em;
+}
+
+.content {
+    margin-top: 55px;
+}
+
+.entry {
+    padding: 15px;
+    text-align: left;
+
+    p {
+        font-family: "freight-text-pro", serif;
+
+        @media #{$break-small} {
+            font-size: 0.9em;
+        }
+    }
+    
+    a {
+        color: $accent;
+        text-decoration: underline;
+
+        &:hover {
+            color: lighten($accent, 10%)
+        }
+    }
+}
