@@ -473,11 +473,14 @@ p {
 
 blockquote {
   background: #f8f8f8;
-  padding: 20px;
+  padding: 0;
+  padding: 0.5em;
   width: 100%;
   margin-left: 0;
   margin: 0;
   border-left: 7px solid #f45d5f; }
+  blockquote p {
+    margin: 0; }
 
 code {
   font-size: 80%;
@@ -813,7 +816,7 @@ FOOTER MODULE
 .footer {
   font-size: 0.8em;
   text-align: center;
-  padding: 2em; }
+  padding: 1.2em; }
   .footer p {
     margin: 0;
     display: inline-block; }

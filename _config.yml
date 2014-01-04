@@ -2,5 +2,6 @@ name: RaffiMaurer.com
 markdown: redcarpet
 pygments: true
 permalink: /:year/:month/:title/
+paginate: 4
 google_analytics_id: UA-40854366-2
 relative_permalinks: false
