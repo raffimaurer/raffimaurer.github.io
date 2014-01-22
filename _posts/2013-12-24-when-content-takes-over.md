@@ -1,7 +1,7 @@
 ---
 layout: post
 title: When Content Takes Over
-published: true
+published: false
 ---
 I love the internet. It provides content consumption on a level that mankind has never before experienced - one that can evolve and expand. It's like a newspaper that can be changed after going to print.
 
