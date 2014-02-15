@@ -1,32 +1,11 @@
 <header class="header">
     <div class="wrap">
-        <div class="headerLeft">
-            <h1><a href="/">Raffi Maurer</a></h1>
-        </div>
-        <div class="headerRight"><nav role="navigation">
-            <nav role="navigation">
-                <ul class="navigation">
-
-                    {% if page.active == "about" %}
-                        <li class="headerButton--selected"><a href="/about/">About</a></li>
-                    {% else %}
-                        <li class="headerButton"><a href="/about/">About</a></li>
-                    {% endif %}
-
-                    {% if page.active == "blog" %}
-                        <li class="headerButton--selected"><a href="/blog/">Blog</a></li>
-                    {% else %}
-                        <li class="headerButton"><a href="/blog/">Blog</a></li>
-                    {% endif %}
-
-                    {% if page.active == "work" %}
-                        <li class="headerButton--selected"><a href="/work/">Work</a></li>
-                    {% else %}
-                        <li class="headerButton"><a href="/work/">Work</a></li>
-                    {% endif %}
-
-                </ul>
-            </nav>
+        <a href="/"><img class="header__image" src="{{ site.url }}/assets/mono.png"></a>
+        {% if page.active == "blog" or page.path contains '_posts' %}
+            <a class="header__button--selected" href="/">❬ About</a>
+        {% else %}
+            <a class="header__button" href="/blog/">Blog ›</a>
+        {% endif %}
         </div>
     </div>
 </header>

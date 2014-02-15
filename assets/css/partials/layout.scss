@@ -1,12 +1,11 @@
 body {
-    border-top: 0.2em solid #929292;
-    font-size: 20px; // What where you thinking?
-    background-color: #F6F6F6;
+    border-top: 0.2em solid #838383;
+    background-color: #FCFCFC;
 }
 
 .wrap {
     margin: 0 auto;
-    max-width: 45em;
+    max-width: 42em;
     overflow: hidden;
     
     img {
@@ -19,7 +18,6 @@ body {
 .wrap--entry {
     @extend .wrap;
     @extend .entry;
-
     max-width: 40em;
 }
 
@@ -33,10 +31,6 @@ body {
 
     p {
         font-family: "freight-text-pro", serif;
-
-        @media #{$break-small} {
-            font-size: 0.9em;
-        }
     }
     
     a {

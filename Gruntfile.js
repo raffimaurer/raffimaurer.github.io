@@ -5,58 +5,49 @@ module.exports = function(grunt) {
 		// Compile Sass
 	    sass: {
 	      dist: {
+	      	options: {
+	      		style: 'compressed'
+	      	},
 	        files: {
-	          'assets/css/style.css' : 'assets/css/main.scss'
-	        }
-	      }
-	    },
-
-	    // Minify CSS
-	    csso: {
-	      dist: {
-	        options: {
-	          report: 'gzip'
-	        },
-	        files: {
-	          'assets/css/style.min.css': ['assets/css/style.css']
+	          'assets/css/style.min.css' : 'assets/css/main.scss'
 	        }
 	      }
 	    },
 
 	    // Jekyll build
-	    jekyll: {
-	    	server : {
-		        src : './',
-		        dest: '_site',
-		        server : true,
-		        server_port : 4000,
-		        auto : true
-      		},
-	    },
+	    //jekyll: {
+	    //	server : {
+		//        src : './',
+		//        dest: '_site',
+		//        server : true,
+		//        //server_port : 4000,
+		//        auto : true
+      	//	},
+	    //},
 
 	    connect: {
 	      server: {
 	        options: {
 	          hostname: null,
 	          port: 4000,
-	          base: '_site'
+	          base: '_site',
 	        }
 	      }
     	},
 
 	    // Watch tasks
 	    watch: {
-	      options: {
-			livereload:true,
-	      },
+	   		options: {
+				livereload: true,
+   			},
+
 
 	      css: {
 	        files: ['/assets/css/**/*'],
-	        tasks: ['sass', 'csso'],
+	        tasks: ['sass'],
 	        options: {
 	          interrupt: true,
 	          spawn: false,
-	          debounceDelay: 0,
 	        },
 	      },
 
@@ -66,7 +57,7 @@ module.exports = function(grunt) {
 	          '!**/node_modules/**',
 	          '!**/_site/**'
 	        ],
-	        tasks: ['sass', 'csso', 'jekyll'],
+	        tasks: ['sass'],
 	        options: {
 	          spawn: false,
 	        },
@@ -74,13 +65,11 @@ module.exports = function(grunt) {
 	    },
 	});
 
-	// Load npm tasks
-	grunt.loadNpmTasks('grunt-csso');
 	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-jekyll');
+	//grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-notify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 
-	grunt.registerTask('default', ['sass', 'csso', 'jekyll', 'connect', 'watch']);
+	grunt.registerTask('default', ['sass', 'connect', 'watch']);
 };
