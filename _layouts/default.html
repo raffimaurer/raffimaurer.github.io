@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>{{ page.title }}</title>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0 maximum-scale=1.0 user-scalable=no">
-    <meta name="description" content="Hi, I'm Raffi Maurer - a young designer, developer and writer from London, UK."/>
-    <link rel="author" href="http://plus.google.com/+RaffiMaurer/"/>
-    
-    <link rel="stylesheet" href="/assets/css/style.min.css">
-    <script src="http://localhost:35729/livereload.js"></script>
-    <script type="text/javascript" src="//use.typekit.net/rqh4dbw.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <script type="text/javascript" src="//use.typekit.net/rqh4dbw.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    
-    {% include favicon.html %}
-    {% include analytics.html %}
-</head>
-    
+        <link rel="stylesheet" href="/css/main.css">
+
 <body>
-    {% include header.html %}
-    {{ content }}
+    <header class="site__header">
+    <div class="wrap">
+          <h1 class="site__title">Raffi Maurer</h1>
+          </div>
+    </header>
+
+    <div class="wrap">
+        <div class="grid">
+            {{ content }}
+        </div>
+    </div>
+    
 </body>
 </html>

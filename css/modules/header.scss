@@ -1,0 +1,29 @@
+.site__header {
+  margin-bottom: 1.4444rem;
+  font-family: $sans-serif;
+  background: #F7F9FD;
+
+}
+
+.site__title {
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #666666;
+  display: inline-block;
+  font-size: 1.7rem;      // !!
+}
+
+.site__nav {
+  font-weight: 300;
+}
+
+.bio__pic {
+	width: 100%;
+  padding: 0px 70px 0px 70px;
+}
+
+.about--large {           // !!
+  text-align: center;
+  font-size: 180%;
+  font-weight: 500;
+}

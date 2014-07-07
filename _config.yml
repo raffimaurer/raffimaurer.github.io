@@ -1,7 +1,4 @@
-name: RaffiMaurer.com
+name: Raffi Maurer
 markdown: redcarpet
-pygments: true
-permalink: /:year/:month/:title/
-paginate: 4
+highlighter: pygments
 google_analytics_id: UA-40854366-2
-relative_permalinks: false

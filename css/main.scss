@@ -10,19 +10,18 @@ b. Import modules
 */
 
 
-
 /*--------------------*\
     	PARTIALS
 \*--------------------*/
 
-@import "partials/normalize";	// Initial reset
-@import "partials/reset";		// My added resets
-@import "partials/variables";	// Global variables
+@import "partials/normalize";   // Initial reset
+@import "partials/reset";	    // Additional resets
+@import "partials/variables";	// Variables and temp dependencies
+@import "partials/grid";		// Dan's awesome grid
+@import "partials/helpers";		// Lil' helpers for emergencies
 @import "partials/layout";		// Layout-related elements
-@import "partials/typography";	// Headers & paragraphs
-@import "partials/grids";		// Simple Grid dependencies
-@import "partials/animate";		// Animate.css dependencies
-
+@import "partials/typography";	// Type nuances
+@import "partials/animate";		// Animate.css tidbits
 
 /*--------------------*\
     	MODULES
