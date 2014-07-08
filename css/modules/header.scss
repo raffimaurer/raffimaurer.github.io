@@ -1,20 +1,26 @@
 .site__header {
-  margin-bottom: 1.4444rem;
   font-family: $sans-serif;
-  background: #F7F9FD;
+  border-bottom: 1px solid darken($light-grey, 5%);
+}
 
+.site__header__container {
+   display: inline-block;
 }
 
 .site__title {
   margin-bottom: 0;
-  font-weight: 600;
+  font-weight: 500;
   color: #666666;
   display: inline-block;
-  font-size: 1.7rem;      // !!
+  font-size: 1.3rem;
+  margin: 0;
+  left: 0.7rem;
+  text-transform: uppercase;
 }
 
-.site__nav {
-  font-weight: 300;
+.site__avatar {
+  top: 0.5rem;
+  height: 2.2rem;
 }
 
 .bio__pic {

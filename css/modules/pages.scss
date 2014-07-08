@@ -18,8 +18,18 @@
 
 	li {
 		margin: 0.75rem 0rem 0.75rem 0rem;
-		&:before {
-			content: ">";
+
+		a { font-size: 1.2rem; }
+
+		span {
+			font-style: italic;
+			color: darken($light-grey, 15%);
 		}
+	}
+}
+
+.wrap--entry {
+	h1 {
+		font-family: $sans-serif;
 	}
 }

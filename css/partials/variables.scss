@@ -28,7 +28,7 @@ $light-grey: #EDEDED;
 // TYPEFACES
 
 $serif: "minion-pro" serif;
-$sans-serif: "freight-sans-pro", sans-serif;
+$sans-serif: "Anago", sans-serif;
 
 
 
@@ -77,12 +77,7 @@ html {
 \*-----------------------------------*/
 
 
-.wrap {
-  max-width: 50rem;
-  margin: 0 auto;
-  padding: 1.4444rem;
-  padding-top: 0.8rem;
-}
+
 
 .grid--demo [class*="-of-2"] {
   height: 1.4444rem;

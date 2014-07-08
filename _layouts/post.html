@@ -1,10 +1,8 @@
 ---
 layout: default
 ---
-
-<div class="content--blog">
-    <div class="wrap--entry">
-        <h1>{{ page.title }}<br><span>{{ page.date | date: "%B %d" }}</span></h1>
-        <p>{{ content }}</p>
-    </div>
+<div class="post">
+    <h1 class="post__title">{{ page.title }}</h1>
+    <h2 class="post__title--sub">{{ page.date | date: "%B %d" }}</h2>
+    <p>{{ content }}</p>
 </div>
